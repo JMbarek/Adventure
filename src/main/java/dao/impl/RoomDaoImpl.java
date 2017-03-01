@@ -34,10 +34,7 @@ public class RoomDaoImpl implements RoomDao {
                 r = mapRooms.get(i);
             }
         }
-        if (r != null) return r;
-        else {
-            return null;
-        }
+        return r;
     }
 
     @Override
@@ -48,10 +45,7 @@ public class RoomDaoImpl implements RoomDao {
                 r = routeRooms.get(i);
             }
         }
-        if (r != null) return r;
-        else {
-            return null;
-        }
+        return r;
     }
 
     @Override
