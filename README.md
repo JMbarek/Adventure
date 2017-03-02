@@ -6,11 +6,11 @@
 - to run the project :     
       - cd  Adventure
       - java  -cp  target/classes  Controller.Runner  input/map.xml  input/config1.txt  output/route.xml
-- to run the unit tests(unit tests will be through Maven run): 
+- to run the unit tests(unit tests will be run by Maven): 
       - cd  Adventure
       - mvn test 
       
-      - The output should be like in below:
+        - The output should be like in below:
         
  ```
 -------------------------------------------------------
