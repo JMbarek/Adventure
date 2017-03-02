@@ -163,7 +163,10 @@ public class Runner {
         if (args.length < 3) {
             System.out.println("please provide all the required parameters");
         } else {
-            execute(args[0], args[1], args[2]);
+            String arg0 = args[0].toString();
+            String arg1 =  args[1].toString();
+            String arg2 = args[2].toString();
+            execute(arg0, arg1, arg2);
         }
     }
 }
