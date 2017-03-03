@@ -3,14 +3,27 @@
 
 
 - Under "Adventure/target/classes" are all the .class files available ( *.class compiled classes by maven).
-- to run the project :     
+- to run the project using maven:     
       - cd  Adventure
-      - java  -cp  target/classes  Controller.Runner  input/map.xml  input/config1.txt  output/route.xml
+      - mvn exec:java -Dexec.mainClass=Controller.Runner -Dexec.args="input/map.xml input/config1.txt output/route1.xml"
+        - The output should look like in below: 
+```
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building adventure 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.5.0:java (default-cli) @ adventure ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+
+ ```
 - to run the unit tests(unit tests will be run by Maven): 
       - cd  Adventure
       - mvn test 
       
-        - The output should be like in below:
+        - The output should look like in below:
         
  ```
 -------------------------------------------------------
