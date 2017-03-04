@@ -2,8 +2,8 @@
 > Serialize/Deserialize from/to XML using Jackson &amp; DAO pattern &amp; Factory pattern ...
 
 
-- Under "Adventure/target/classes" are all the .class files available ( *.class compiled classes by maven).
-- to run the project using maven:     
+- All the .class files (compiled classes by maven) are available under "Adventure/target/classes".
+- To run the project using maven:     
       - cd  Adventure
       - mvn exec:java -Dexec.mainClass=Controller.Runner -Dexec.args="input/map.xml input/config1.txt output/route1.xml"
         - The output should look like in below: 
